@@ -3,6 +3,7 @@ import "./globals.css";
 import { Open_Sans } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Sidebar } from "@/components/sidebar/sidebar";
+import { MobileSidebar } from "@/components/sidebar/mobile-sidebar";
 import { cn } from "@/lib/utils";
 
 const openSans = Open_Sans({
@@ -24,7 +25,8 @@ export default function RootLayout({
       <body className={cn("flex", openSans.className)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>  
           <Sidebar />
-          <main className="flex flex-1">
+          <main className="relative flex flex-1">
+            <MobileSidebar />
             {children}
           </main>
         </ThemeProvider>
