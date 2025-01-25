@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Llyod Quizeo's Portfolio",
+  title: "Jhon Llyod Quizeo's Portfolio",
   description: "Jhon Llyod Quizeo's portfolio website",
 };
 
@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("flex", openSans.className)}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>  
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>  
           <Sidebar />
-          <main className="relative max-w-screen-2xl mx-auto flex-1">
+          <main className="relative max-w-screen-3xl mx-auto flex-1 bg-white dark:bg-gray-950">
             {children}
           </main>
         </ThemeProvider>
