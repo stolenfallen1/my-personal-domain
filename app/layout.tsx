@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Open_Sans } from 'next/font/google'
+
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Sidebar } from "@/components/sidebar/sidebar";
+import { CursorAnimation } from "@/components/theme/cursor-animation";
 import { cn } from "@/lib/utils";
 
 const openSans = Open_Sans({
@@ -24,6 +26,7 @@ export default function RootLayout({
       <body className={cn("flex", openSans.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>  
           <Sidebar />
+          <CursorAnimation />
           <main className="relative max-w-screen-3xl mx-auto flex-1 bg-white dark:bg-gray-950">
             {children}
           </main>

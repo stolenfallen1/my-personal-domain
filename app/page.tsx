@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from 'react';
+
 import { Send, Mail, Download, FileDown } from 'lucide-react';
 import { cn } from "@/lib/utils";
+
+import { FallingParticlesAnimation } from '@/components/theme/falling-paticles-animation';
 
 export default function Home() {
   const [isHoveredResume, setIsHoveredResume] = useState(false);
@@ -10,7 +13,8 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex items-center justify-center">
-      <section className="text-center max-w-2xl px-4">
+      <FallingParticlesAnimation />
+      <section className="text-center max-w-2xl px-4 z-10">
         <div className="flex items-center justify-center mb-2 md:mb-4">
           <h1 className="text-xl font-bold mr-2 sm:text-2xl md:text-4xl md:mr-4">
             Hi, I'm Jhon Llyod Quizeo 
