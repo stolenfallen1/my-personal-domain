@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Open_Sans } from 'next/font/google'
-
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Sidebar } from "@/components/sidebar/sidebar";
 import { CursorAnimation } from "@/components/theme/cursor-animation";
@@ -23,12 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("flex", openSans.className)}>
+      <body className={cn("h-screen flex", openSans.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>  
           <Sidebar />
           <CursorAnimation />
-          <main className="relative max-w-screen-3xl mx-auto flex-1 bg-white dark:bg-gray-950">
-            {children}
+          <main className="relative flex-1 overflow-y-auto bg-white dark:bg-gray-950 scroll-smooth">
+            <div className="h-auto">
+              {children}
+            </div>
           </main>
         </ThemeProvider>
       </body>
