@@ -13,7 +13,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="h-screen flex items-center justify-center">
+      <section id="about" className="min-h-screen flex items-center justify-center">
         <About />
       </section>
 

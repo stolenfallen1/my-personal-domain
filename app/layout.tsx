@@ -27,9 +27,7 @@ export default function RootLayout({
           <Sidebar />
           <CursorAnimation />
           <main className="relative flex-1 overflow-y-auto bg-white dark:bg-gray-950 scroll-smooth">
-            <div className="h-auto">
               {children}
-            </div>
           </main>
         </ThemeProvider>
       </body>
