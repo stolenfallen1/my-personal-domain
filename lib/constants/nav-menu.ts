@@ -8,12 +8,12 @@ export const NAV_MENU = [
         href: "/about",
     },
     {
-        label: "Blogs",
-        href: "/blogs",
-    },
-    {
         label: "Projects",
         href: "/projects",
+    },
+    {
+        label: "Blogs",
+        href: "/blogs",
     },
 ];
 

@@ -56,11 +56,11 @@ export function Sidebar() {
                 <ul className="mt-8 flex flex-col items-center gap-4">
                     {NAV_MENU.map((item, index) => (
                         <li key={index}>
-                        <Link href={item.href} onClick={() => setIsMenuOpen(false)}>
-                            <p className="text-md font-light hover:opacity-70 md:text-xl dark:text-white">
-                            {item.label}
-                            </p>
-                        </Link>
+                            <Link href={item.href} onClick={() => setIsMenuOpen(false)}>
+                                <p className="text-md font-light hover:opacity-70 md:text-xl dark:text-white">
+                                {item.label}
+                                </p>
+                            </Link>
                         </li>
                     ))}
                 </ul>
