@@ -8,17 +8,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section id="home" className="h-screen flex items-center justify-center">
+      <section id="home">
         <Hero />
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center">
+      <section id="about">
         <About />
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="min-h-screen flex items-center justify-center">
+      <section id="projects">
         <Projects />
       </section>
     </>
